@@ -59,7 +59,7 @@ def input_order():
 	url_r = dict()
 	suc_r = True
 	params = dict()
-	
+
 	r = re.match(RE_INPUT_ORDER, line)
 	if r:
 		#指令的参数总的str
@@ -74,8 +74,8 @@ def input_order():
 		input_path = r.group('path')
 
 		url_r['url'] = input_url
-		url_r['http'] = input_http 
-		url_r['host'] = input_host 
+		url_r['http'] = input_http
+		url_r['host'] = input_host
 		url_r['port'] = input_port
 		url_r['path'] = input_path
 
@@ -86,4 +86,3 @@ def input_order():
 
 if __name__=='__main__':
 	input_order()
-
